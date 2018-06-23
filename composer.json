@@ -1,0 +1,50 @@
+{
+    "name": "vdbelt/laravel-revolut",
+    "description": "A Laravel wrapper for the Revolut Business API",
+    "type": "library",
+    "keywords": [
+        "laravel", "revolut", "banking", "payments", "payment", "sepa", "wiretransfer"
+    ],
+    "require": {
+        "php": "^5.5.9 || ^7.0",
+        "illuminate/contracts": "^5.0",
+        "illuminate/support": "^5.0",
+        "sverraest/revolut-php": "^1.1"
+    },
+    "require-dev": {
+        "graham-campbell/testbench": "^5.0",
+        "phpunit/phpunit": "^6.5|^7.0",
+        "mockery/mockery": "^1.0",
+        "phpro/grumphp": "^0.14",
+        "squizlabs/php_codesniffer": "^3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vdbelt\\LaravelRevolut\\": "src/Vdbelt/LaravelRevolut"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Vdbelt\\LaravelRevolut\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Vdbelt\\LaravelRevolut\\LaravelRevolutServiceProvider"
+            ],
+            "aliases": {
+                "Revolut": "Vdbelt\\LaravelRevolut\\Facades\\Revolut"
+            }
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Martin van de Belt",
+            "email": "martin@vandebelt.dk"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
