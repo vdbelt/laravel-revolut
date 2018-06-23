@@ -67,4 +67,4 @@ $payment = [
 $payment = Revolut::payments()->create($payment);
 ```
 
-Fore more examples, checkout the usage intructions for [revolut-php](https://github.com/sverraest/revolut-php)
+For more examples, check out the usage intructions for [revolut-php](https://github.com/sverraest/revolut-php#usage-details)
